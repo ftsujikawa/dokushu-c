@@ -5,12 +5,17 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "lldb",
+      "name": "gcc build and debug active file",
+      "type": "cppdbg",
       "request": "launch",
-      "name": "Debug",
-      "program": "${workspaceFolder}/Chap02/a.out",
-      "args": [ "3", "5" ],
-      "cwd": "${workspaceFolder}"
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "preLaunchTask": "gcc build active file"
     }
   ]
 }
