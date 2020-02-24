@@ -1,1 +1,1 @@
-# dokushu-c
+# 独習C
